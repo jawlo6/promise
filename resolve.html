@@ -1,0 +1,12 @@
+<script>
+const promise = new Promise((resolve, reject) => {
+    setTimeout(() => { //symulujemy ściąganie danych
+        resolve("Przykładowe dane");
+    }, 1000);
+});
+
+promise.then(result => {
+    //obietnica zakończyła się pozytywnie
+    console.log(result)
+});
+</script>
